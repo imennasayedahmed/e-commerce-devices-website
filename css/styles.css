@@ -129,6 +129,7 @@ body {
 .search-bar {
   padding: 0 1.4rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   border: 1px solid #eeeeee;
@@ -146,6 +147,11 @@ body {
 /* the outline when you click on a search bar is now gone! */
 #search-input:focus {
   outline: none;
+}
+.search-icon-link {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
 }
 
 .whislist-cart-user {
