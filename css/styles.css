@@ -258,7 +258,7 @@ body {
 .hero-img {
   width: 100%;
 }
-.hero-choice-box {
+/* .hero-choice-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,4 +271,4 @@ body {
   height: 1.6rem;
   border-radius: 50%;
   color: #a9a8a8;
-}
+} */
