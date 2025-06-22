@@ -84,7 +84,7 @@ body {
   /* Because we want header to be sticky later */
   /* height: 9.6rem; */
   margin-top: 3.6rem;
-  margin-bottom: 3.2rem;
+  /* margin-bottom: 3.2rem; */
   padding: 0 2.4rem 1.2rem 2.4rem;
   position: relative;
   border-bottom: 1.6px solid #dbdbdb;
@@ -129,7 +129,6 @@ body {
 .search-bar {
   padding: 0 1.4rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
   border: 1px solid #eeeeee;
@@ -148,12 +147,17 @@ body {
 #search-input:focus {
   outline: none;
 }
-.search-icon-link {
+
+.search-icon-link:link,
+.search-icon-link:visited {
   display: inline-block;
   text-decoration: none;
-  border: none;
 }
-
+.search-icon {
+  /* to avoid some margin or padding on the img itself 
+  that caused by a element */
+  vertical-align: middle;
+}
 .whislist-cart-user {
   display: flex;
   align-items: center;
@@ -165,21 +169,106 @@ body {
   height: 2.2rem;
 }
 
-/* .hero-section {
-  padding: 4.8rem 0 9.6rem 0;
+.hero-section {
+  padding: 0 0 9.6rem 0;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.hero-side-left {
+  padding-left: 12.8rem;
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  align-items: center;
+  text-align: left;
+  gap: 1.4rem;
+  border-right: 1.6px solid #dbdbdb;
+}
+
+.hero-side-left a:link,
+.hero-side-left a:visited {
+  text-decoration: none;
+  color: #000;
+}
+.hero-side-left p {
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 500;
+}
+#hero-first-para {
+  padding-top: 3.2rem;
 }
 
 .hero {
   max-width: 130rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 3.6rem 9.6rem 0 3.6rem;
   padding: 0 3.2rem;
+  padding-right: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 9.6rem;
-} */
+  /* gap: 2.8rem; */
+  background-color: #000;
+}
+.hero-text-box {
+  padding: 4.8rem 0 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.iphone-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.8rem;
+}
+.iphone-text {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.1;
+}
+.shop-now-link:link,
+.shop-now-link:visited {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.shop-now-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+.shop-now-link span:first-child {
+  border-bottom: 1px solid #fff;
+}
+
+.hero-img-box {
+  padding-top: 2.4rem;
+}
+.hero-img {
+  width: 100%;
+}
+.hero-choice-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  background-color: #000;
+}
+.hero-choice-box div {
+  content: " ";
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  color: #a9a8a8;
+}
