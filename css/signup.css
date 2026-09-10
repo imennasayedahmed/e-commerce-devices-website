@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10rem; */
+  /* 62.5% * 16px = 10px */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+}
+
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  gap: 14.6rem;
+  align-items: center;
+  background-color: #fff;
+
+  /* Because we want header to be sticky later */
+  /* height: 9.6rem; */
+  margin-top: 3.6rem;
+  /* margin-bottom: 3.2rem; */
+  padding: 0 2.4rem 1.2rem 2.4rem;
+  position: relative;
+  border-bottom: 1.6px solid #dbdbdb;
+}
+
+.logo {
+  height: 2.2rem;
+}
+.main-nav {
+  /* margin-right: 10rem; */
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.4rem;
+  /* transition: all 0.3s; */
+}
+
+/* .main-nav-link:hover,
+.main-nav-link:active {
+} */
+.lined:link,
+.lined:visited {
+  border-bottom: 1.4px solid #a9a8a8;
+}
+
+.search-buy-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+.search-bar {
+  padding: 0 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #eeeeee;
+  border-radius: 0.5rem;
+  background-color: #eeeeee;
+}
+#search-input {
+  width: 18rem;
+  height: 3.2rem;
+  border: none;
+  font-size: 1.2rem;
+  color: #000000;
+  background-color: #eeeeee;
+}
+/* the outline when you click on a search bar is now gone! */
+#search-input:focus {
+  outline: none;
+}
+
+.search-icon-link:link,
+.search-icon-link:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+.search-icon {
+  /* to avoid some margin or padding on the img itself 
+  that caused by a element */
+  vertical-align: middle;
+}
+.whislist-cart-user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user-icon,
+.cart-icon {
+  height: 2.2rem;
+}
+
+/**************************/
+/* Sign Up
+Main section */
+/**************************/
+
+.main-section {
+  padding: 9.6rem 0;
+  display: flex;
+  justify-content: center;
+}
+.container-sign {
+  max-width: 120rem;
+  display: grid;
+
+  column-gap: 4.8rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 3.2rem;
+  padding-left: 0;
+  /* margin: 0 auto; */
+}
+.sign-up-img {
+  width: 100%;
+  height: 100%;
+}
+.sign-img {
+  width: 100%;
+}
+.sign-up-content {
+  max-width: 100%;
+  padding: 4.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.signup-form-title {
+  color: #000;
+  font-size: 4.8rem;
+  font-weight: 500;
+  word-spacing: 4px;
+  margin-bottom: 0.4rem;
+}
+.signup-form-subtitle {
+  color: #000;
+  font-size: 1.4rem;
+}
+.sign-up-form {
+  max-width: 80%;
+  font-size: 2.4rem;
+  margin-top: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.sign-up-form input {
+  font-size: 1.8rem;
+  border: 0;
+  border-bottom: 1px solid #555555;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.2rem;
+}
+
+.signup-btn {
+  text-align: center;
+}
