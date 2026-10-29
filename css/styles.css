@@ -93,9 +93,10 @@ body {
 .logo {
   height: 2.2rem;
 }
-.main-nav {
-  /* margin-right: 10rem; */
-}
+/* .main-nav {
+  /* margin-right: 10rem; 
+}*/
+
 .main-nav-list {
   list-style: none;
   display: flex;
