@@ -7,5 +7,9 @@
 }
 .forget-pass-btn {
   font-size: 1.6rem;
-  color: brown;
+}
+.forget-pass-btn:link,
+.forget-pass-btn:visited {
+  text-decoration: none;
+  color: rgb(232, 55, 55);
 }
